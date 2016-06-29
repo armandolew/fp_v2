@@ -1,16 +1,20 @@
 %nav.navbar.navbar-light
-  %a.navbar-brand{:href => "#"} Navbar
+  %a.navbar-brand{:href => "/"}
+    %img.home-logo{:src => "assets/home.png"}
   %ul.nav.navbar-nav
-    %li.nav-item.active
-      %a.nav-link{:href => "#"}
-        Home
-        %span.sr-only (current)
     %li.nav-item
       %a.nav-link{:href => "#"} Productos
     %li.nav-item
       %a.nav-link{:href => "#"} Fragancias
     %li.nav-item
       %a.nav-link{:href => "#"} Envases
-  %form.form-inline.pull-xs-right
-    %input.form-control{:placeholder => "Search", :type => "text"}
-      %button.btn.btn-success-outline{:type => "submit"} Search
+  %ul.nav.navbar-nav.pull-xs-right
+    %li.nav-item
+      %a.nav-link{:href => "facebook.com"}
+        %i.fa.fa-facebook-official.fa-lg
+    %li.nav-item
+      %a.nav-link{:href => "facebook.com"}
+        %i.fa.fa-twitter-square.fa-lg
+    %li.nav-item
+      %a.nav-link{:href => "facebook.com"}
+        %i.fa.fa-youtube-square.fa-lg

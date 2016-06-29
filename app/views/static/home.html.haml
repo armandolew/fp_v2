@@ -1,12 +1,14 @@
 =render 'layouts/main_nav'
 %div.container
+  %div.separator-1
   %div.row
     =render partial: 'layouts/home/stage'
   %div.separator
   %div.row
     =render partial: 'layouts/home/products_module', locals: {perfumes: @perfumes} 
+  %div.separator-1
   %div.row
     =render 'layouts/home/promotions_module'
-  %div.separator
+  %div.separator-1
   %div.row
     =render 'layouts/footer'               
