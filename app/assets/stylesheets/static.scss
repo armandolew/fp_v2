@@ -15,8 +15,7 @@ html, body{
 
 .navbar-light{
   background: #373a3c;
-  -webkit-border-radius: 0!important;      
-  -moz-border-radius: 0!important;
+  border-radius: 0;
 }
 
 .navbar-nav li a{
@@ -108,6 +107,18 @@ html, body{
 
 footer{
   background: #373a3c;
+  padding: 14px 0;
+  font-family: 'Roboto Condensed';
+  font-size: .8em;
+  color: #fff;  
+}
+
+footer ul li a{
+  color: #fff;
+}
+
+footer h6{
+  color: #F04782;
 }
 
 
