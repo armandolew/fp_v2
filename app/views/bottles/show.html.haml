@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @bottle.name
+%p
+  %b Bottle type:
+  = @bottle.bottle_type_id
+
+= link_to 'Edit', edit_bottle_path(@bottle)
+\|
+= link_to 'Back', bottles_path

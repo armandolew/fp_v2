@@ -1,0 +1,21 @@
+%h1 Listing perfume_types
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th
+      %th
+      %th
+
+  %tbody
+    - @perfume_types.each do |perfume_type|
+      %tr
+        %td= perfume_type.name
+        %td= link_to 'Show', perfume_type
+        %td= link_to 'Edit', edit_perfume_type_path(perfume_type)
+        %td= link_to 'Destroy', perfume_type, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Perfume type', new_perfume_type_path

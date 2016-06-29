@@ -1,0 +1,21 @@
+%h1 Listing family_types
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th
+      %th
+      %th
+
+  %tbody
+    - @family_types.each do |family_type|
+      %tr
+        %td= family_type.name
+        %td= link_to 'Show', family_type
+        %td= link_to 'Edit', edit_family_type_path(family_type)
+        %td= link_to 'Destroy', family_type, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Family type', new_family_type_path

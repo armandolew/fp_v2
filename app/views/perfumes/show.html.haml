@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @perfume.name
+%p
+  %b Trend:
+  = @perfume.trend
+%p
+  %b Family type:
+  = @perfume.family_type_id
+%p
+  %b Perfume type:
+  = @perfume.perfume_type_id
+
+= link_to 'Edit', edit_perfume_path(@perfume)
+\|
+= link_to 'Back', perfumes_path

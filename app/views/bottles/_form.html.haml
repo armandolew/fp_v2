@@ -1,0 +1,16 @@
+= form_for @bottle do |f|
+  - if @bottle.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@bottle.errors.count, "error")} prohibited this bottle from being saved:"
+      %ul
+        - @bottle.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :bottle_type_id
+    = f.number_field :bottle_type_id
+  .actions
+    = f.submit 'Save'

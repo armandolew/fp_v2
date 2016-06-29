@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @family_type.name
+
+= link_to 'Edit', edit_family_type_path(@family_type)
+\|
+= link_to 'Back', family_types_path

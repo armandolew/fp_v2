@@ -1,0 +1,16 @@
+%nav.navbar.navbar-light
+  %a.navbar-brand{:href => "#"} Navbar
+  %ul.nav.navbar-nav
+    %li.nav-item.active
+      %a.nav-link{:href => "#"}
+        Home
+        %span.sr-only (current)
+    %li.nav-item
+      %a.nav-link{:href => "#"} Productos
+    %li.nav-item
+      %a.nav-link{:href => "#"} Fragancias
+    %li.nav-item
+      %a.nav-link{:href => "#"} Envases
+  %form.form-inline.pull-xs-right
+    %input.form-control{:placeholder => "Search", :type => "text"}
+      %button.btn.btn-success-outline{:type => "submit"} Search

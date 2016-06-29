@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @perfume_type.name
+
+= link_to 'Edit', edit_perfume_type_path(@perfume_type)
+\|
+= link_to 'Back', perfume_types_path

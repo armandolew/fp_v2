@@ -1,0 +1,22 @@
+= form_for @perfume do |f|
+  - if @perfume.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@perfume.errors.count, "error")} prohibited this perfume from being saved:"
+      %ul
+        - @perfume.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :trend
+    = f.text_field :trend
+  .field
+    = f.label :family_type_id
+    = f.number_field :family_type_id
+  .field
+    = f.label :perfume_type_id
+    = f.number_field :perfume_type_id
+  .actions
+    = f.submit 'Save'

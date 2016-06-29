@@ -1,0 +1,102 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+html, body{
+	margin: 0!important;
+    padding: 0!important;
+}
+
+.navbar-light{
+  background: #373a3c;
+  -webkit-border-radius: 0!important;      
+  -moz-border-radius: 0!important;
+}
+
+.navbar-nav li a{
+  font-family: 'Roboto Condensed';
+  color: #fff!important;
+  height: 100%;
+  padding: 0 14px;
+  text-align: center;
+}
+
+.navbar-nav li a:hover{
+  background: #000;
+}
+
+#stage .item{
+  background: #42bdc2;
+  padding: 30px 0px;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 3px;      
+  -moz-border-radius: 3px;
+  border-radius: 3px;      
+  text-align: center;
+  heigth: 100%;
+  min-height: 300px;
+}
+
+#products h2, #promotions h2{
+  text-align: center;
+  font-family: 'Roboto Condensed';
+  font-size: 2.0em;
+}
+
+#products .product{
+  height: 100%;
+}
+
+#products .card-deck .item{
+  position: relative;
+  font-family: 'Roboto Condensed';
+  color: #221A1C;
+  padding-bottom: 15px;
+}
+
+#products .card-deck .item .sale-dialog{
+  position: absolute;
+  width: 50px;
+  height: auto;
+  background: #EC407A;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+#products .card-deck .item .trend-dialog{
+  position: absolute;
+  width: auto;
+  height: 20px;
+  background: #EC407A;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 2px 4px;
+  line-height: 100%; 
+}
+
+#products .card-deck .item img{
+  width: 100%;
+  height: auto;
+}
+
+#promotions img{
+  width: 100%;
+  height: auto;
+}
+
+.separator{
+  width: 100%;
+  border-bottom: 1px solid #E5E5E5;
+  height: 1px;
+  margin: 20px 0 19px 0;
+}
+
+footer{
+  background: #373a3c;
+}
+
+

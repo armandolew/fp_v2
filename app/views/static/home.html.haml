@@ -1,0 +1,12 @@
+=render 'layouts/main_nav'
+%div.container
+  %div.row
+    =render partial: 'layouts/home/stage'
+  %div.separator
+  %div.row
+    =render partial: 'layouts/home/products_module', locals: {perfumes: @perfumes} 
+  %div.row
+    =render 'layouts/home/promotions_module'
+  %div.separator
+  %div.row
+    =render 'layouts/footer'               

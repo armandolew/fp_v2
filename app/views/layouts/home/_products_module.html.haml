@@ -1,0 +1,15 @@
+%div#products.col-md-12
+  %h2
+    Productos Destacados
+  %div.card-deck-wrapper
+    %div.card-deck.owl-carousel.owl-theme
+      -perfumes.each do |perfume|
+        %div.card.item
+          %div.sale-dialog
+            SALE
+          %img.card-img-top{:src => perfume.image.url, :alt => "Card image cap"}
+          %div.card-block
+            =perfume.name
+            %br
+            %div.trend-dialog
+              =perfume.trend

@@ -1,0 +1,23 @@
+%h1 Listing bottles
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Bottle type
+      %th
+      %th
+      %th
+
+  %tbody
+    - @bottles.each do |bottle|
+      %tr
+        %td= bottle.name
+        %td= bottle.bottle_type_id
+        %td= link_to 'Show', bottle
+        %td= link_to 'Edit', edit_bottle_path(bottle)
+        %td= link_to 'Destroy', bottle, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Bottle', new_bottle_path
