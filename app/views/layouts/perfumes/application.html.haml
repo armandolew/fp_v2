@@ -1,9 +1,7 @@
 !!!
 %html
   %head
-    = stylesheet_link_tag 'perfumes/application', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag 'perfumes/application', 'https://fonts.googleapis.com/css?family=Roboto+Condensed', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'perfumes/application', 'data-turbolinks-track' => true   
   %body
-    %div.container
-      = yield
-    =render 'layouts/footer'
+    = yield

@@ -1,27 +1,18 @@
-%h1 Listing perfumes
-
-%table
-  %thead
-    %tr
-      %th Name
-      %th Trend
-      %th Family type
-      %th Perfume type
-      %th
-      %th
-      %th
-
-  %tbody
-    - @perfumes.each do |perfume|
-      %tr
-        %td= perfume.name
-        %td= perfume.trend
-        %td= perfume.family_type_id
-        %td= perfume.perfume_type_id
-        %td= link_to 'Show', perfume
-        %td= link_to 'Edit', edit_perfume_path(perfume)
-        %td= link_to 'Destroy', perfume, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Perfume', new_perfume_path
+=render 'layouts/main_nav'
+%div.container
+  %div.separator-1
+  %div.row
+    %h4
+      Perfumes
+    %div#perfumes-index.col-md-12
+      -@perfumes.each do |perfume|
+        %div.col-sm-2
+          .card
+            %img.card-img-top{:alt => "Card image cap", "data-src" => "...", :src => perfume.image.url}
+              .card-block
+                %h5.card-title 
+                  =perfume.name
+                %div.trend-dialog
+                  =perfume.trend
+  
+=render 'layouts/footer'
